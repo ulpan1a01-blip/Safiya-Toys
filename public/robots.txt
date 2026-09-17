@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /seller
+Disallow: /courier
+Disallow: /api/
+
+Sitemap: https://safiya-toys.onrender.com/sitemap.xml
