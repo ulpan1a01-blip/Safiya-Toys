@@ -839,6 +839,13 @@ app.get('/api/stats', auth('seller'), function (req, res) {
 // ============================================================
 
 // Разрешаем браузеру получать картинки, CSS и JavaScript.
+app.use(express.static(resolve(root, 'public'), {
+  etag: false,
+  maxAge: 0,
+  setHeaders(res) {
+    res.setHeader('Cache-Control', 'no-store');
+  }
+}));
 app.use('/assets', express.static(resolve(root, 'public/assets'), {
   etag: false,
   maxAge: 0,
