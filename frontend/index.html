@@ -1,0 +1,133 @@
+<!doctype html>
+
+<!-- Основной язык сайта — русский -->
+<html lang="ru">
+
+<head>
+  <!-- Кодировка страницы -->
+  <meta charset="utf-8">
+
+  <!-- Адаптация сайта для телефонов и планшетов -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <!-- Название страницы во вкладке браузера -->
+  <title>Safiya-Toys — любимые игрушки рядом</title>
+
+  <!-- Иконка сайта во вкладке браузера -->
+  <link
+    rel="icon"
+    href="/assets/images/inst1.png"
+  >
+
+  <!-- Подключение CSS-стилей -->
+  <link
+    rel="stylesheet"
+    href="/frontend/styles.css"
+  >
+</head>
+
+<body>
+
+  <!-- Шапка сайта.
+       Её содержимое добавляется через JavaScript -->
+  <header id="header"></header>
+
+
+  <!-- Основная часть страницы -->
+  <div id="layout">
+
+    <!-- Боковое меню для продавца и курьера.
+         Содержимое добавляется через JavaScript -->
+    <aside id="sidebar"></aside>
+
+
+    <!-- Блок, в котором отображаются страницы сайта -->
+    <main id="main" aria-live="polite">
+
+      <!-- Показывается, пока загружаются данные -->
+      <p class="empty">Загрузка…</p>
+
+    </main>
+
+  </div>
+
+
+  <!-- Нижняя часть сайта -->
+  <footer id="footer">
+
+    <!-- Логотип Safiya-Toys -->
+    <img
+      src="/assets/images/SafiyaTpng2.png"
+      alt="Safiya-Toys"
+    >
+
+    <!-- Слоган магазина -->
+    <p>ИГРУШКИ · СЧАСТЬЕ · РАЗВИТИЕ · ВМЕСТЕ</p>
+
+    <!-- Дополнительный текст -->
+    <span>Счастливые дети — счастливый мир</span>
+
+    <!-- Instagram магазина -->
+    <a
+      class="instagram-link"
+      href="https://www.instagram.com/safiya_toys_turkestan/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Instagram Safiya Toys Turkestan"
+    >
+      <img
+        src="/assets/images/instagram.png"
+        alt="Instagram"
+      >
+      <span>@safiya_toys_turkestan</span>
+    </a>
+
+  </footer>
+
+
+  <!-- Нижнее меню для мобильных устройств.
+       Ссылки добавляются через JavaScript -->
+  <nav
+    id="bottom"
+    aria-label="Навигация"
+  ></nav>
+
+
+  <!-- Модальное окно.
+       Используется для форм, подтверждений и меню -->
+  <dialog id="dialog">
+
+    <!-- Кнопка закрытия модального окна -->
+    <button
+      class="close"
+      data-action="close"
+      aria-label="Закрыть"
+    >
+      Закрыть
+    </button>
+
+    <!-- Содержимое модального окна -->
+    <div id="dialog-body"></div>
+
+  </dialog>
+
+
+  <!-- Небольшие уведомления для пользователя -->
+  <div
+    id="toast"
+    role="status"
+  ></div>
+
+
+  <!-- Подключение главного JavaScript-файла -->
+  <script
+    type="module"
+    src="/frontend/app.js?v=20260916-2"
+  ></script>
+
+</body>
+
+</html>
